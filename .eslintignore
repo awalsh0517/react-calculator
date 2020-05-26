@@ -1,0 +1,5 @@
+# Ignore Webpack Config File
+webpack.dev.js
+
+# Ignore Bundle.js file
+bundle.js
