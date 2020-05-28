@@ -3,8 +3,8 @@ import { ADD, SUBTRACT, MULTIPLY, DIVIDE } from '../public/javascript/operatorCo
 import calculator from '../public/javascript/calculator'
 
 const validateInputs = ({ num1, num2 }) => ((
-  num1.length > 0 && Number.isNaN(num1)
-) && (num2.length > 0 && Number.isNaN(num2)))
+  num1.length > 0 && !Number.isNaN(num1)
+) && (num2.length > 0 && !Number.isNaN(num2)))
 
 export default () => {
   const [num1, setNum1] = useState('')
